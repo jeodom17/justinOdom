@@ -3,7 +3,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
-import CameraIcon from "@mui/icons-material/PhotoCamera";
+import ContactPageOutlinedIcon from "@mui/icons-material/ContactPageOutlined";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -20,24 +20,38 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Avatar from "@mui/material/Avatar";
 
-const theme = createTheme();
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    primary: {
+      main: "#0971f1",
+      darker: "#053e85",
+    },
+    btn: {
+      main: "#000000",
+      contrastText: "#FFF",
+    },
+  },
+});
 
 export default function NavBar() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar color="btn" position="relative">
         <Toolbar>
           <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
             <Box gridColumn="span 1">
-              <CameraIcon sx={{ mr: 5 }} />
+              <ContactPageOutlinedIcon fontSize="large" m={5} sx={{ mr: 5 }} />
             </Box>
-            <Box gridColumn="span 8">
+            <Box gridColumn="span 8" m={5}>
               <Typography variant="h3" color="inherit" noWrap>
                 Justin Odom
               </Typography>
             </Box>
-                
+
             <Box gridColumn="span 3" m={2}>
               <Avatar
                 alt="Justin Odom"

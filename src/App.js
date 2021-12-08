@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
-import Project from './components/Project';
+import CardList from './components/CardList';
+
+import './styles.css'
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
 
     <AboutMe />
 
-    <Project />
+    <CardList />
 
     </div>
   );

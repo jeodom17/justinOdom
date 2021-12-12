@@ -32,14 +32,14 @@ const cardData = [
   },
   {
     id: "FitnessTracker",
-    category: "How to",
+    category: "Stay Fit",
     title: "Keep up with your fitness goals!",
     pointOfInterest: 120,
     backgroundColor: "#000"
   },
   {
     id: "NeverAlone",
-    category: "Pedal Power",
+    category: "Community",
     title: "Support for Everyone",
     pointOfInterest: 260,
     backgroundColor: "#000"
@@ -54,8 +54,8 @@ const cardData = [
 
   {
     id: "b",
-    category: "Holidays",
-    title: "Seriously the Only Escape is the Stratosphere",
+    category: "Coming soon",
+    title: "Future Project",
     pointOfInterest: 260,
     backgroundColor: "#000"
   }

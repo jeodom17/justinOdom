@@ -17,7 +17,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import picPng from "../../assets/img/pic.png";
 import Avatar from "@mui/material/Avatar";
 
 const theme = createTheme({
@@ -55,7 +55,8 @@ export default function NavBar() {
             <Box gridColumn="span 3" m={2}>
               <Avatar
                 alt="Justin Odom"
-                src="/static/images/avatar/1.jpg"
+                // src={picPng}
+                src="/images/pic.png"
                 sx={{ width: 100, height: 100 }}
               />
             </Box>

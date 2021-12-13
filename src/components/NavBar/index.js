@@ -39,20 +39,19 @@ const theme = createTheme({
 export default function NavBar() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <AppBar color="btn" position="relative">
-        <Toolbar>
-          <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
-            <Box gridColumn="span 1">
+      <AppBar className="appBar" color="btn" position="fixed">
+        <Toolbar className="toolBar">
+          {/* <Box display="grid" gridTemplateColumns="repeat(3, 1fr)"> */}
+            <Box >
               <ContactPageOutlinedIcon fontSize="large" m={5} sx={{ mr: 5 }} />
             </Box>
-            <Box gridColumn="span 8" m={5}>
+            <Box m={5}>
               <Typography variant="h3" color="inherit" noWrap>
                 Justin Odom
               </Typography>
             </Box>
 
-            <Box gridColumn="span 3" m={2}>
+            <Box m={2}>
               <Avatar
                 alt="Justin Odom"
                 // src={picPng}
@@ -60,7 +59,7 @@ export default function NavBar() {
                 sx={{ width: 100, height: 100 }}
               />
             </Box>
-          </Box>
+          {/* </Box> */}
         </Toolbar>
       </AppBar>
     </ThemeProvider>

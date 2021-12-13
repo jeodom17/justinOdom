@@ -7,6 +7,12 @@
   background-color: black;
 }
 
+.toolBar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   margin: 0;
   padding: 5;
@@ -183,7 +189,7 @@ h2 {
 .overlay {
   z-index: 1;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   will-change: opacity;
   top: 0;
   bottom: 0;
@@ -191,6 +197,15 @@ h2 {
   transform: translateX(-50%);
   width: 100%;
   max-width: 990px;
+}
+
+
+
+.close-link {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
 }
 
 .overlay a {

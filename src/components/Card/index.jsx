@@ -8,6 +8,8 @@ import { Title } from "./Title";
 import { Image } from "./Image";
 import { openSpring, closeSpring } from "./animations";
 import { useScrollConstraints } from "../../utils/use-scroll-constraints";
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
+import IconButton from '@mui/material/IconButton';
 
 // Distance in pixels a user has to scroll a card down before we recognise
 // a swipe-to dismiss action.
@@ -69,7 +71,16 @@ const dismissDistance = 150;
               pointOfInterest={pointOfInterest}
               backgroundColor={backgroundColor}
             />
+
+            {isSelected ?
+            <div>
+              <Title title={title} category={category} isSelected={isSelected} />
+              <Link className="close-link" to="/" >
+                <CancelOutlinedIcon color="secondary"/>
+              </Link>
+            </div> :
             <Title title={title} category={category} isSelected={isSelected} />
+            }
             <ContentPlaceholder />
           </motion.div>
         </div>

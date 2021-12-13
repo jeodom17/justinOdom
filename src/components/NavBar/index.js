@@ -10,7 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
+import Resume from "../Resume";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -43,7 +43,7 @@ export default function NavBar() {
         <Toolbar className="toolBar">
           {/* <Box display="grid" gridTemplateColumns="repeat(3, 1fr)"> */}
             <Box >
-              <ContactPageOutlinedIcon fontSize="large" m={5} sx={{ mr: 5 }} />
+              <Resume />
             </Box>
             <Box m={5}>
               <Typography variant="h3" color="inherit" noWrap>

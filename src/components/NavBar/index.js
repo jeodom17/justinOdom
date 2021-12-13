@@ -2,6 +2,7 @@
 //* ----> Imports <----
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
+import Pdf from '../../assets/JEO_Resume.pdf'
 import Button from "@mui/material/Button";
 import ContactPageOutlinedIcon from "@mui/icons-material/ContactPageOutlined";
 import Card from "@mui/material/Card";
@@ -10,7 +11,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Resume from "../Resume";
+import Contact from "../Contact";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -42,16 +43,7 @@ export default function NavBar() {
       <AppBar className="appBar" color="btn" position="fixed">
         <Toolbar className="toolBar">
           {/* <Box display="grid" gridTemplateColumns="repeat(3, 1fr)"> */}
-            <Box >
-              <Resume />
-            </Box>
-            <Box m={5}>
-              <Typography variant="h3" color="inherit" noWrap>
-                Justin Odom
-              </Typography>
-            </Box>
-
-            <Box m={2}>
+          <Box m={2}>
               <Avatar
                 alt="Justin Odom"
                 // src={picPng}
@@ -59,6 +51,20 @@ export default function NavBar() {
                 sx={{ width: 100, height: 100 }}
               />
             </Box>
+            
+            <Box m={5}>
+              <Typography variant="h3" color="inherit" noWrap>
+                Justin Odom
+              </Typography>
+            </Box>
+            <Box >
+            <a className="resLink" href = {Pdf} target = "_blank">Resume</a>
+            </Box>
+            <Box>
+              <Contact />
+            </Box>
+
+            
           {/* </Box> */}
         </Toolbar>
       </AppBar>

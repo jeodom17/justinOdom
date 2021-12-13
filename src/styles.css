@@ -62,6 +62,12 @@ header {
   position: relative;
 }
 
+.resLink {
+  color: #0FFF50;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 .avatar {
   background: var(--divider);
   border-radius: 50%;
